@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS - Gifs!</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" id="tema" href="./css/stylesDay.css">
+    <!-- <link rel="stylesheet"  href="./css/stylesNight.css"> -->
+
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo_header">
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </h1>
+    </header>
+    <nav class="contenedor_nav">
+        <div class="logo_home" id="home-button">
+            <img
+                class="gifOF_logo"
+                src="./assets/img/gifOF_logo.png"
+                alt="Logo de la pagina"
+            >
+            <img 
+                class="gifOF_logo_dark"
+                src="./assets/img/gifOF_logo_dark.png"
+                alt="Logo de la pagina de color oscuro">
+        </div>
+        <div  class="btn_nav" >
+            <a class="btn_crear_gif" id="btn-crear-gif" href="./crearGif.html">Crear Guifos</a>  
+            <div class="contenedor_dropdown">
+                <button  class="btn_elegir_tema" id="btn_selector_tema">Elegir Tema</button>
+               <span class="dropdown" >
+                    <!-- cambiar div  dropdown por span -->
+                    <img class="img_center" src="./assets/icons/dropdown.svg" alt="boton dropdown para elegir estilos">  
+               </span> 
+                <div  class="estilos_escondidos">
+                    <a href="#" id="tema1" class="sailor_day">Sailor Day</a>
+                    <a href="#" id="tema2" class="sailor_night">Sailor Night</a>
+                </div>
+            </div>
+            <a href="./crearGif.html#misgifs"class="mis_gifos" id="btn_mis_gifs">
+                <span class="subrayado">M</span>is Guifos
+            </a>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="" id="seccion_busqueda">
+            <div class="caja_busqueda">
+               
+                    <h2 class="caja_busqueda_h2">
+                        Buscar
+                    </h2>
+                    <div class="caja_busqueda_container">
+                        <input
+                            type="text"
+                            class="input_buscar"
+                            id="txtBusqueda"
+                            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                         
+                        <button id="btnBuscar" class="btn_buscar">
+                            <span>
+                                <img class="icon_buscar" src="./assets/icons/Combined_Shape.svg" alt="icono busqueda">
+                            </span>Buscar
+                        </button>
+                    </div>
+               
+            </div>
+            <div class="tags">
+                <h3></h3>
+                <h3></h3>
+                <h3></h3>
+            </div>
+        </section>
+        
+        <section>
+            <h2 class="input-bar hidden">Resultados de búsqueda: </h2>
+            
+            <div id="box" class="box">
+                
+            </div>
+        </section>
+        <section class="boxSugerencias">
+            <h2 class="input-bar">Hoy te sugerimos:</h2>
+        
+            <div id="boxS1"></div>
+            <div id="boxS2"></div>
+            <div id="boxS3"></div>
+            <div id="boxS4"></div>
+       
+
+        </section>
+
+        <section >
+            <h2 class="input-bar">Tendencias:</h2>
+            <div id="boxTendencias" class="box">
+                
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="center">
+            © 2020- Copyright-Todos los derechos reservados-Bascur Belen
+        </p>
+    </footer>
+    <!-- Script -->
+    <!-- <script src="./js/main.js"></script> -->
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/tema.js"></script>
+</body>
+</html>
